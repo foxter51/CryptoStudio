@@ -23,3 +23,5 @@ C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignmen
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.csproj.CopyComplete
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.exe
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.pdb
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\CurrenciesInfo.g.cs
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\CurrenciesInfo.baml
