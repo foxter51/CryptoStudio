@@ -27,7 +27,6 @@ namespace TestAssignment
         private static JsonSerializerSettings serializerSettings = new JsonSerializerSettings();
 
         private PingClient pingClient = new PingClient(httpClient, serializerSettings);
-        private SimpleClient simpleClient = new SimpleClient(httpClient, serializerSettings);
         private SearchClient searchClient = new SearchClient(httpClient, serializerSettings);
 
         public Currencies()
