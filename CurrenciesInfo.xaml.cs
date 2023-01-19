@@ -30,6 +30,8 @@ namespace TestAssignment
         private CoinsClient coinsClient = new CoinsClient(httpClient, serializerSettings);
         private ExchangesClient exchangesClient = new ExchangesClient(httpClient, serializerSettings);
 
+        private List<CoinMarkets> coinsList;
+
         public CurrenciesInfo()
         {
             InitializeComponent();
@@ -39,7 +41,8 @@ namespace TestAssignment
         {
             if((await pingClient.GetPingAsync()).GeckoSays != String.Empty)
             {
-                CurrenciesListAll.ItemsSource = coinsClient.GetCoinMarkets("USD").Result.ToList();
+                coinsList = coinsClient.GetCoinMarkets("USD").Result.ToList();
+                CurrenciesListAll.ItemsSource = coinsList;
                 CurrenciesListAll.SelectedIndex = 0;
                 CurrenciesListAll.Focus();
             }
@@ -61,6 +64,11 @@ namespace TestAssignment
 
                 Markets.ItemsSource = marketsLinks;
             }
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CurrenciesListAll.ItemsSource = coinsList.FindAll(coin => coin.Name.Contains(SearchBox.Text));
         }
     }
 }

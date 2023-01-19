@@ -28,8 +28,11 @@
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            
-            <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="18">Currencies</TextBlock>
+
+            <DockPanel Grid.Row="0" LastChildFill="False">
+                <TextBlock FontWeight="Bold" FontSize="18">Currencies</TextBlock>
+                <TextBox Name="SearchBox" DockPanel.Dock="Right" Width="250" Height="20" Margin="10" TextChanged="SearchBox_TextChanged"></TextBox>
+            </DockPanel>
             
             <ListBox Grid.Row="1" Name="CurrenciesListAll" ItemsSource="{Binding}" DisplayMemberPath="Name" ScrollViewer.VerticalScrollBarVisibility="Auto" FontSize="14" Margin="10" SelectionChanged="CurrenciesListAll_SelectionChanged"></ListBox>
         </Grid>
