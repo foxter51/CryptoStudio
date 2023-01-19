@@ -13,9 +13,15 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Arial"/>
         </Style>
+        
+        <LinearGradientBrush x:Key="LinearPanelBrush">
+            <GradientStop Color="LightGoldenrodYellow" Offset="0.1"></GradientStop>
+            <GradientStop Color="White" Offset="0.5"></GradientStop>
+            <GradientStop Color="LightGoldenrodYellow" Offset="0.9"></GradientStop>
+        </LinearGradientBrush>
     </Page.Resources>
 
-    <Grid>
+    <Grid Background="{StaticResource LinearPanelBrush}">
 
         <StackPanel>
             <TextBlock FontWeight="Bold" FontSize="18" Margin="10">Top currencies</TextBlock>

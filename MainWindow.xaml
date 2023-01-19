@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAssignment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Frame Name="frame" Margin="3" Source="MainPage.xaml" NavigationUIVisibility="Visible"></Frame>
+        Title="CryptoStudio" Height="450" Width="800">
+
+    <Window.Resources>
+        <LinearGradientBrush x:Key="LinearPanelBrush">
+            <GradientStop Color="LightGoldenrodYellow" Offset="0.1"></GradientStop>
+            <GradientStop Color="White" Offset="0.5"></GradientStop>
+            <GradientStop Color="LightGoldenrodYellow" Offset="0.9"></GradientStop>
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <Grid Background="{StaticResource LinearPanelBrush}">
+        <Frame Grid.Row="0" Name="frame" Margin="3" Source="MainPage.xaml" NavigationUIVisibility="Visible"></Frame>
     </Grid>
 </Window>
