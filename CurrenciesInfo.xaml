@@ -46,8 +46,8 @@
                 <TextBox FontSize="14" Text="{Binding CurrentPrice, Mode=OneWay, StringFormat='$\{0\}'}" Focusable="False"></TextBox>
                 <TextBlock FontSize="14">Volume:</TextBlock>
                 <TextBox FontSize="14" Text="{Binding TotalVolume, Mode=OneWay}" Focusable="False"></TextBox>
-                <TextBlock FontSize="14">Price change % (24H):</TextBlock>
-                <TextBox FontSize="14" Text="{Binding PriceChangePercentage24H, Mode=OneWay}" Focusable="False"></TextBox>
+                <TextBlock FontSize="14">Price change (24H):</TextBlock>
+                <TextBox FontSize="14" Text="{Binding PriceChangePercentage24H, Mode=OneWay, StringFormat='\{0\}%'}" Focusable="False"></TextBox>
             </StackPanel>
         </Grid>
     </Grid>
