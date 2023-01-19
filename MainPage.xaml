@@ -16,6 +16,7 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <TextBlock Margin="10"><Hyperlink NavigateUri="Currencies.xaml">Currencies</Hyperlink></TextBlock>
             <TextBlock Margin="10"><Hyperlink NavigateUri="CurrenciesInfo.xaml">Currencies Info</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink></TextBlock>
         </StackPanel>
     </Grid>
 </Page>
