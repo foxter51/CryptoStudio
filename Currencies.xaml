@@ -16,11 +16,8 @@
     </Page.Resources>
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
+        <StackPanel>
             <TextBlock FontWeight="Bold" FontSize="18" Margin="10">Top currencies</TextBlock>
             <ListView Name="CurrenciesList" ItemsSource="{Binding}" FontSize="14" Margin="10" IsHitTestVisible="False">
                 <ListView.View>

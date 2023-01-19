@@ -39,7 +39,7 @@ namespace TestAssignment
             //check API status
             if((await pingClient.GetPingAsync()).GeckoSays != String.Empty)
             {
-                CurrenciesList.ItemsSource = searchClient.GetSearchTrending().Result.TrendingItems.Select(item => item.TrendingItem).ToList();;
+                CurrenciesList.ItemsSource = searchClient.GetSearchTrending().Result.TrendingItems.Select(item => item.TrendingItem).ToList();
             }
         }
     }
