@@ -35,11 +35,19 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button><Hyperlink NavigateUri="Currencies.xaml">Currencies</Hyperlink></Button>
-            <Button><Hyperlink NavigateUri="CurrenciesInfo.xaml">Currencies Info</Hyperlink></Button>
-            <Button><Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink></Button>
-        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="0.5" Background="BlanchedAlmond">
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button>
+                    <Hyperlink NavigateUri="PopularCurrencies.xaml">Popular Currencies</Hyperlink>
+                </Button>
+                <Button>
+                    <Hyperlink NavigateUri="CurrenciesInfo.xaml">Currencies Info</Hyperlink>
+                </Button>
+                <Button>
+                    <Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink>
+                </Button>
+            </StackPanel>
+        </Border>
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <Label FontFamily="Arial" FontWeight="Black" FontSize="72" Content="CryptoStudio" HorizontalAlignment="Center"></Label>

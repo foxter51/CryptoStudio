@@ -65,7 +65,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Currencies.xaml">
+    <Page Include="PopularCurrencies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,8 +88,8 @@
     <Compile Include="Converter.xaml.cs">
       <DependentUpon>Converter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Currencies.xaml.cs">
-      <DependentUpon>Currencies.xaml</DependentUpon>
+    <Compile Include="PopularCurrencies.xaml.cs">
+      <DependentUpon>PopularCurrencies.xaml</DependentUpon>
     </Compile>
     <Compile Include="CurrenciesInfo.xaml.cs">
       <DependentUpon>CurrenciesInfo.xaml</DependentUpon>

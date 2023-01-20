@@ -7,13 +7,11 @@ C:\Users\ihor\source\repos\TestAssignment\TestAssignment\bin\Debug\Newtonsoft.Js
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.csproj.AssemblyReference.cache
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.csproj.SuggestedBindingRedirects.cache
-C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Currencies.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\MainPage.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\MainWindow.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\App.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment_MarkupCompile.cache
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment_MarkupCompile.lref
-C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Currencies.baml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\MainPage.baml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\MainWindow.baml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\TestAssignment.g.resources
@@ -27,3 +25,5 @@ C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\CurrenciesInf
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\CurrenciesInfo.baml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Converter.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Converter.baml
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\PopularCurrencies.g.cs
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\PopularCurrencies.baml
