@@ -51,7 +51,7 @@
                 <ComboBox ItemsSource="{Binding}" DisplayMemberPath="Name" Name="From" Width="80" Margin="20, 5, 0, 5" DropDownClosed="NewSelectFromEvent"></ComboBox>
             </StackPanel>
             <Button BorderBrush="Transparent" ToolTip="Switch" Click="SwitchEvent">
-                <Image Height="20" Source="C:\Users\ihor\source\repos\creative\creative\arrow-right-arrow-left-solid.png"></Image>
+                <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\arrow-right-arrow-left-solid.png"></Image>
             </Button>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Label Target="{Binding ElementName=To}" Content="To:"></Label>

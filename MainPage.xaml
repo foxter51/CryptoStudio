@@ -46,6 +46,7 @@
                 <Button>
                     <Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink>
                 </Button>
+                
             </StackPanel>
         </Border>
 
