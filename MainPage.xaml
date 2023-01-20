@@ -35,8 +35,8 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Border BorderBrush="Black" BorderThickness="0.5" Background="BlanchedAlmond">
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <Border Grid.Row="0" BorderBrush="LightGray" BorderThickness="1" Background="BlanchedAlmond">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button>
                     <Hyperlink NavigateUri="PopularCurrencies.xaml">Popular Currencies</Hyperlink>
                 </Button>
@@ -46,7 +46,12 @@
                 <Button>
                     <Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink>
                 </Button>
-                
+                <Button>
+                    <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\circle-half-stroke-solid.png"></Image>
+                </Button>
+                <Button>
+                    <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\language-solid.png"></Image>
+                </Button>
             </StackPanel>
         </Border>
 
