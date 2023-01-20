@@ -10,19 +10,15 @@
       Loaded="Page_Loaded">
 
     <Page.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Arial"/>
-            <Setter Property="Margin" Value="10"/>
-        </Style>
-
-        <LinearGradientBrush x:Key="LinearPanelBrush">
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.1"></GradientStop>
-            <GradientStop Color="White" Offset="0.5"></GradientStop>
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.9"></GradientStop>
-        </LinearGradientBrush>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="CurrenciesInfoDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Page.Resources>
 
-    <Grid Background="{StaticResource LinearPanelBrush}">
+    <Grid Background="{DynamicResource LinearPanelBrush}">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -36,7 +32,7 @@
             </Grid.RowDefinitions>
 
             <DockPanel Grid.Row="0" LastChildFill="False">
-                <TextBlock FontWeight="Bold" FontSize="18">Currencies</TextBlock>
+                <Label>Currencies</Label>
                 <TextBox Name="SearchBox" DockPanel.Dock="Right" Width="250" Height="20" Margin="10" TextChanged="SearchBox_TextChanged"></TextBox>
             </DockPanel>
             
@@ -49,7 +45,7 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="18">Currency info</TextBlock>
+            <Label Grid.Row="0">Currency info</Label>
             
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>

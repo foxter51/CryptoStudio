@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\App.xaml
-51429218908
+9-1561172478
 
 10-1009713125
 16-770403894
-Converter.xaml;PopularCurrencies.xaml;CurrenciesInfo.xaml;MainPage.xaml;MainWindow.xaml;
+Converter.xaml;ConverterDictionary.xaml;CurrenciesInfoDictionary.xaml;MainPageDictionary.xaml;PopularCurrencies.xaml;CurrenciesInfo.xaml;MainPage.xaml;MainWindow.xaml;ThemeDictionary.xaml;
 
-True
+False
 

@@ -10,35 +10,15 @@
       Loaded="Page_Loaded">
 
     <Page.Resources>
-        <LinearGradientBrush x:Key="LinearPanelBrush">
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.1"></GradientStop>
-            <GradientStop Color="White" Offset="0.5"></GradientStop>
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.9"></GradientStop>
-        </LinearGradientBrush>
-        
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="5"></Setter>
-            <Setter Property="Background" Value="Transparent"></Setter>
-            <Setter Property="BorderBrush" Value="White"></Setter>
-        </Style>
-        
-        <Style TargetType="Label">
-            <Setter Property="FontSize" Value="18"></Setter>
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="VerticalAlignment" Value="Center"></Setter>
-        </Style>
-        
-        <Style TargetType="TextBox">
-            <Setter Property="FontSize" Value="16"></Setter>
-            <Setter Property="TextAlignment" Value="Center"></Setter>
-            <Setter Property="MaxLines" Value="1"></Setter>
-            <Setter Property="Height" Value="25"></Setter>
-            <Setter Property="Margin" Value="10"></Setter>
-            <Setter Property="Text" Value="0,00"></Setter>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ConverterDictionary.xaml"/>
+                <ResourceDictionary Source="ThemeDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Page.Resources>
 
-    <Grid Background="{StaticResource LinearPanelBrush}">
+    <Grid Background="{DynamicResource LinearPanelBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>

@@ -6,36 +6,25 @@
       xmlns:local="clr-namespace:TestAssignment"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="CryptoStudio">
+      Title="CryptoStudio"
+      Loaded="Page_Loaded">
 
     <Page.Resources>
-        <LinearGradientBrush x:Key="LinearPanelBrush">
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.1"></GradientStop>
-            <GradientStop Color="White" Offset="0.5"></GradientStop>
-            <GradientStop Color="LightGoldenrodYellow" Offset="0.9"></GradientStop>
-        </LinearGradientBrush>
-        
-        <Style TargetType="Hyperlink">
-            <Setter Property="TextDecorations" Value="None"></Setter>
-            <Setter Property="Foreground" Value="Black"></Setter>
-        </Style>
-
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="10"></Setter>
-            <Setter Property="Background" Value="Transparent"></Setter>
-            <Setter Property="BorderBrush" Value="Transparent"></Setter>
-            <Setter Property="FontFamily" Value="Arial"></Setter>
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="MainPageDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Page.Resources>
 
-    <Grid Background="{StaticResource LinearPanelBrush}">
+    <Grid Name="MainGrid" Background="{DynamicResource LinearPanelBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" BorderBrush="LightGray" BorderThickness="1" Background="BlanchedAlmond">
+        <Border Grid.Row="0" BorderBrush="LightGray" BorderThickness="1" Name="MenuBar">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button>
                     <Hyperlink NavigateUri="PopularCurrencies.xaml">Popular Currencies</Hyperlink>
@@ -46,10 +35,10 @@
                 <Button>
                     <Hyperlink NavigateUri="Converter.xaml">Converter</Hyperlink>
                 </Button>
-                <Button>
+                <Button Click="Button_Click">
                     <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\circle-half-stroke-solid.png"></Image>
                 </Button>
-                <Button>
+                <Button Click="Button_Click_1">
                     <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\language-solid.png"></Image>
                 </Button>
             </StackPanel>

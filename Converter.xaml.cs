@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace TestAssignment
 {
@@ -84,6 +85,7 @@ namespace TestAssignment
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            Switch_Theme();
             if ((await pingClient.GetPingAsync()).GeckoSays != String.Empty)
             {
                 List<CoinMarkets> coinsList = coinsClient.GetCoinMarkets("USD").Result.ToList();
@@ -93,6 +95,32 @@ namespace TestAssignment
 
                 From.SelectedIndex = 0;
                 To.SelectedIndex = 1;
+            }
+            else
+            {
+                MessageBox.Show("There is no connection to API!");
+            }
+        }
+
+        private void Switch_Theme()
+        {
+            LinearGradientBrush linearGradientBrush = (LinearGradientBrush)Resources["LinearPanelBrush"];
+            SolidColorBrush labelsBrush = (SolidColorBrush)Resources["LabelsColor"];
+            linearGradientBrush.GradientStops.Clear();
+
+            if (MainPage.darkTheme)
+            {
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.Black, 0.1));
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.Gray, 0.5));
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.Black, 0.9));
+                labelsBrush.Color = Colors.White;
+            }
+            else
+            {
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.LightGoldenrodYellow, 0.1));
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.White, 0.5));
+                linearGradientBrush.GradientStops.Add(new GradientStop(Colors.LightGoldenrodYellow, 0.9));
+                labelsBrush.Color = Colors.Black;
             }
         }
     }

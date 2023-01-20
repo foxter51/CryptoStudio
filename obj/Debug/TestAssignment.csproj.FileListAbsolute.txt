@@ -27,3 +27,7 @@ C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Converter.g.c
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\Converter.baml
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\PopularCurrencies.g.cs
 C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\PopularCurrencies.baml
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\ConverterDictionary.baml
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\MainPageDictionary.baml
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\ThemeDictionary.baml
+C:\Users\ihor\source\repos\TestAssignment\TestAssignment\obj\Debug\CurrenciesInfoDictionary.baml
