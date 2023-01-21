@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="PopCurr">Popular Currencies</v:String>
+    <v:String x:Key="CurrInfo">Currencies Info</v:String>
+    <v:String x:Key="Conv">Converter</v:String>
+    <v:String x:Key="TopCurr">Top Currencies</v:String>
+    <v:String x:Key="Name">Name</v:String>
+    <v:String x:Key="Rank">Rank</v:String>
+    <v:String x:Key="PriceBTC">PriceBTC</v:String>
+    <v:String x:Key="Curr">Currencies</v:String>
+    <v:String x:Key="SoloCurrInfo">Currency Info</v:String>
+    <v:String x:Key="Price">Price:</v:String>
+    <v:String x:Key="Vol">Volume:</v:String>
+    <v:String x:Key="PriceChange">Price Change (24H):</v:String>
+    <v:String x:Key="Markets">Markets:</v:String>
+    <v:String x:Key="From">From:</v:String>
+    <v:String x:Key="To">To:</v:String>
+    <v:String x:Key="Inp">Input:</v:String>
+    <v:String x:Key="Out">Output:</v:String>
+    <v:String x:Key="Convert">Convert</v:String>
+
+</ResourceDictionary>

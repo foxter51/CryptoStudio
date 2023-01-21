@@ -3,7 +3,7 @@
                     x:Name="ThemeDictionary">
 
     <LinearGradientBrush x:Key="LinearPanelBrush"></LinearGradientBrush>
-    
+
     <SolidColorBrush x:Key="LabelsColor"></SolidColorBrush>
 
     <Style TargetType="Label">

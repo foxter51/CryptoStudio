@@ -12,8 +12,9 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ConverterDictionary.xaml"/>
-                <ResourceDictionary Source="ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/ConverterDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/lang.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -27,20 +28,20 @@
 
         <UniformGrid Rows="1" Columns="3" Grid.Row="0">
             <StackPanel Orientation="Horizontal">
-                <Label Target="{Binding ElementName=From}" Content="From:"></Label>
+                <Label Target="{Binding ElementName=From}" Content="{DynamicResource From}"></Label>
                 <ComboBox ItemsSource="{Binding}" DisplayMemberPath="Name" Name="From" Width="80" Margin="20, 5, 0, 5" DropDownClosed="NewSelectFromEvent"></ComboBox>
             </StackPanel>
             <Button BorderBrush="Transparent" ToolTip="Switch" Click="SwitchEvent">
                 <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\arrow-right-arrow-left-solid.png"></Image>
             </Button>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Label Target="{Binding ElementName=To}" Content="To:"></Label>
+                <Label Target="{Binding ElementName=To}" Content="{DynamicResource To}"></Label>
                 <ComboBox ItemsSource="{Binding}" DisplayMemberPath="Name" Name="To" Width="80" Margin="20, 5, 10, 5" DropDownClosed="NewSelectToEvent"></ComboBox>
             </StackPanel>
         </UniformGrid>
 
         <UniformGrid Rows="2" Columns="2" Grid.Row="1">
-            <Label Target="{Binding ElementName=inputTextBox}" Content="Input:"></Label>
+            <Label Target="{Binding ElementName=inputTextBox}" Content="{DynamicResource Inp}"></Label>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"></ColumnDefinition>
@@ -49,7 +50,7 @@
                 <TextBox Grid.Column="0" Name="inputTextBox" TextChanged="InputTextChangedEvent"></TextBox>
                 <Label Name="fromLabel" Grid.Column="1" Target="{Binding ElementName=inputTextBox}" Content="Bitcoin"></Label>
             </Grid>
-            <Label Target="{Binding ElementName=outputTextBox}" Content="Output:"></Label>
+            <Label Target="{Binding ElementName=outputTextBox}" Content="{DynamicResource Out}"></Label>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"></ColumnDefinition>
@@ -60,7 +61,7 @@
             </Grid>
         </UniformGrid>
 
-        <Button Click="ConvertEvent" Margin="20" Grid.Row="2" FontSize="16" FontWeight="Bold" MaxWidth="200" Style="{x:Null}">Convert</Button>
+        <Button Click="ConvertEvent" Margin="20" Grid.Row="2" FontSize="16" FontWeight="Bold" MaxWidth="200" Style="{x:Null}" Content="{DynamicResource Convert}"></Button>
 
         <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>
         <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>

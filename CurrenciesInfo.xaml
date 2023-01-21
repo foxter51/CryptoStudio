@@ -12,8 +12,9 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ThemeDictionary.xaml"/>
-                <ResourceDictionary Source="CurrenciesInfoDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/CurrenciesInfoDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/lang.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -32,7 +33,7 @@
             </Grid.RowDefinitions>
 
             <DockPanel Grid.Row="0" LastChildFill="False">
-                <Label>Currencies</Label>
+                <Label Content="{DynamicResource Curr}"></Label>
                 <TextBox Name="SearchBox" DockPanel.Dock="Right" Width="250" Height="20" Margin="10" TextChanged="SearchBox_TextChanged"></TextBox>
             </DockPanel>
             
@@ -45,7 +46,7 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0">Currency info</Label>
+            <Label Grid.Row="0" Content="{DynamicResource SoloCurrInfo}"></Label>
             
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
@@ -54,13 +55,13 @@
                 </Grid.RowDefinitions>
                 
                 <StackPanel Grid.Row="0">
-                    <TextBlock FontSize="14">Price:</TextBlock>
+                    <TextBlock FontSize="14" Text="{DynamicResource Price}"></TextBlock>
                     <TextBox FontSize="14" Text="{Binding CurrentPrice, Mode=OneWay, StringFormat='$\{0\}'}" Focusable="False"></TextBox>
-                    <TextBlock FontSize="14">Volume:</TextBlock>
+                    <TextBlock FontSize="14" Text="{DynamicResource Vol}"></TextBlock>
                     <TextBox FontSize="14" Text="{Binding TotalVolume, Mode=OneWay, StringFormat='$\{0\}'}" Focusable="False"></TextBox>
-                    <TextBlock FontSize="14">Price change (24H):</TextBlock>
+                    <TextBlock FontSize="14" Text="{DynamicResource PriceChange}"></TextBlock>
                     <TextBox FontSize="14" Text="{Binding PriceChangePercentage24H, Mode=OneWay, StringFormat='\{0\}%'}" Focusable="False"></TextBox>
-                    <TextBlock FontSize="14">Markets:</TextBlock>
+                    <TextBlock FontSize="14" Text="{DynamicResource Markets}"></TextBlock>
                 </StackPanel>
 
                 <ListBox Grid.Row="1" FontSize="14" Name="Markets" ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Auto"></ListBox>

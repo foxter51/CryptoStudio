@@ -12,7 +12,8 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/lang.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -20,13 +21,19 @@
     <Grid Background="{DynamicResource LinearPanelBrush}">
 
         <StackPanel>
-            <Label Margin="10">Top currencies</Label>
+            <Label Margin="10" Content="{DynamicResource TopCurr}"></Label>
             <ListView Name="CurrenciesList" ItemsSource="{Binding}" FontSize="14" Margin="10" IsHitTestVisible="False">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=Name}">Name</GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=MarketCapRank}">Rank</GridViewColumn>
-                        <GridViewColumn DisplayMemberBinding="{Binding Path=PriceBtc}">Price BTC</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Name}">
+                            <TextBlock Text="{DynamicResource Name}"/>
+                        </GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=MarketCapRank}">
+                            <TextBlock Text="{DynamicResource Rank}"/>
+                        </GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PriceBtc}">
+                            <TextBlock Text="{DynamicResource PriceBTC}"/>
+                        </GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>
