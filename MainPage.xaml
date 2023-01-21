@@ -1,0 +1,58 @@
+﻿<Page x:Class="TestAssignment.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAssignment"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CryptoStudio"
+      Loaded="Page_Loaded">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ThemeDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/MainPageDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/lang.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Name="MainGrid" Background="{DynamicResource LinearPanelBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" BorderBrush="LightGray" BorderThickness="1" Name="MenuBar">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button>
+                    <Hyperlink NavigateUri="PopularCurrencies.xaml">
+                        <TextBlock Text="{DynamicResource PopCurr}"/>
+                    </Hyperlink>
+                </Button>
+                <Button>
+                    <Hyperlink NavigateUri="CurrenciesInfo.xaml">
+                        <TextBlock Text="{DynamicResource CurrInfo}"/>
+                    </Hyperlink>
+                </Button>
+                <Button>
+                    <Hyperlink NavigateUri="Converter.xaml">
+                        <TextBlock Text="{DynamicResource Conv}"/>
+                    </Hyperlink>
+                </Button>
+                <Button Click="Theme_Switch_Event">
+                    <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\circle-half-stroke-solid.png"></Image>
+                </Button>
+                <Button Click="Language_Switch_Event" >
+                    <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\language-solid.png"></Image>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Label FontFamily="Arial" FontWeight="Black" FontSize="72" Content="CryptoStudio" HorizontalAlignment="Center"></Label>
+        </StackPanel>
+    </Grid>
+</Page>

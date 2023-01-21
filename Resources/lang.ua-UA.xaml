@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="PopCurr">Популярні валюти</v:String>
+    <v:String x:Key="CurrInfo">Інформація про валюти</v:String>
+    <v:String x:Key="Conv">Конвертер</v:String>
+    <v:String x:Key="TopCurr">Топ валют</v:String>
+    <v:String x:Key="Name">Ім'я</v:String>
+    <v:String x:Key="Rank">Ранг</v:String>
+    <v:String x:Key="PriceBTC">Ціна в BTC</v:String>
+    <v:String x:Key="Curr">Валюти</v:String>
+    <v:String x:Key="SoloCurrInfo">Інформація про валюту</v:String>
+    <v:String x:Key="Price">Ціна:</v:String>
+    <v:String x:Key="Vol">Об'єм:</v:String>
+    <v:String x:Key="PriceChange">Зміна ціни (24г):</v:String>
+    <v:String x:Key="Markets">Ринки:</v:String>
+    <v:String x:Key="From">З валюти:</v:String>
+    <v:String x:Key="To">У валюту:</v:String>
+    <v:String x:Key="Inp">На вхід:</v:String>
+    <v:String x:Key="Out">На виході:</v:String>
+    <v:String x:Key="Convert">Конвертувати</v:String>
+
+</ResourceDictionary>

@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:Name="ThemeDictionary">
+
+    <LinearGradientBrush x:Key="LinearPanelBrush"></LinearGradientBrush>
+
+    <SolidColorBrush x:Key="LabelsColor"></SolidColorBrush>
+
+    <Style TargetType="Label">
+        <Setter Property="Foreground" Value="{DynamicResource LabelsColor}"></Setter>
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+    </Style>
+
+</ResourceDictionary>
