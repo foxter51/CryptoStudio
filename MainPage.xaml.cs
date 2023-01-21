@@ -15,14 +15,14 @@ namespace TestAssignment
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void Theme_Switch_Event(object sender, System.Windows.RoutedEventArgs e)
         {
             if (darkTheme) darkTheme = false;
             else darkTheme = true;
             Switch_Theme();
         }
 
-        private void Button_Click_1(object sender, System.Windows.RoutedEventArgs e)
+        private void Language_Switch_Event(object sender, System.Windows.RoutedEventArgs e)
         {
             if (englishLanguage) englishLanguage = false;
             else englishLanguage = true;

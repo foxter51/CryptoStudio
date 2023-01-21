@@ -25,20 +25,20 @@ namespace TestAssignment
             InitializeComponent();
         }
 
-        private bool NumberValidationTextBox(string inputText)
+        private bool Number_Validation_TextBox(string inputText)
         {
             Regex regex = new Regex("^[0-9]+(\\,[0-9]+)?$");
             return regex.IsMatch(inputText);
         }
 
-        private void ConvertEvent(object sender, RoutedEventArgs e)
+        private void Convert_Event(object sender, RoutedEventArgs e)
         {
             if (From.SelectedItem != null && To.SelectedItem != null && inputTextBox.Text.Length > 0)
             {
                 CoinMarkets selectedFrom = (CoinMarkets)From.SelectedItem;
                 CoinMarkets selectedTo = (CoinMarkets)To.SelectedItem;
 
-                if (selectedFrom != selectedTo && NumberValidationTextBox(inputTextBox.Text))
+                if (selectedFrom != selectedTo && Number_Validation_TextBox(inputTextBox.Text))
                 {
                     double inputSum = double.Parse(inputTextBox.Text);
                     double res = inputSum * (double)selectedFrom.CurrentPrice / (double)selectedTo.CurrentPrice;
@@ -50,18 +50,18 @@ namespace TestAssignment
             else outputTextBox.Text = "Please fill in the empty fields!";
         }
 
-        private void NewSelectFromEvent(object sender, EventArgs e)
+        private void New_Select_From_Event(object sender, EventArgs e)
         {
             fromLabel.Content = From.Text;
-            ClearFields();
+            Clear_Fields();
         }
-        private void NewSelectToEvent(object sender, EventArgs e)
+        private void New_Select_To_Event(object sender, EventArgs e)
         {
             toLabel.Content = To.Text;
-            ClearFields();
+            Clear_Fields();
         }
 
-        private void SwitchEvent(object sender, RoutedEventArgs e)
+        private void Switch_Event(object sender, RoutedEventArgs e)
         {
             int selectedFromId = From.SelectedIndex;
             int selectedToId = To.SelectedIndex;
@@ -69,16 +69,16 @@ namespace TestAssignment
             From.SelectedIndex = selectedToId;
             To.SelectedIndex = selectedFromId;
 
-            NewSelectFromEvent(sender, e);
-            NewSelectToEvent(sender, e);
+            New_Select_From_Event(sender, e);
+            New_Select_To_Event(sender, e);
         }
 
-        private void InputTextChangedEvent(object sender, TextChangedEventArgs e)
+        private void Input_Text_Changed_Event(object sender, TextChangedEventArgs e)
         {
-            if (inputTextBox.Text != "0,00") ClearFields();
+            if (inputTextBox.Text != "0,00") Clear_Fields();
         }
 
-        private void ClearFields()
+        private void Clear_Fields()
         {
             outputTextBox.Text = "";
         }

@@ -42,10 +42,10 @@
                         <TextBlock Text="{DynamicResource Conv}"/>
                     </Hyperlink>
                 </Button>
-                <Button Click="Button_Click">
+                <Button Click="Theme_Switch_Event">
                     <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\circle-half-stroke-solid.png"></Image>
                 </Button>
-                <Button Click="Button_Click_1" >
+                <Button Click="Language_Switch_Event" >
                     <Image Height="20" Source="C:\Users\ihor\source\repos\TestAssignment\TestAssignment\language-solid.png"></Image>
                 </Button>
             </StackPanel>
